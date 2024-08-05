@@ -1,0 +1,9 @@
+#root {
+  margin: 0 auto;
+  width: 100%;
+}
+.container {
+  background-color: #9900ff;
+  min-height: 100vh;
+  padding: 2rem;
+}
