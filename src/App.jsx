@@ -2,6 +2,7 @@ import "./App.css";
 // import Basics from "./components/basics";
 // import Gestures from "./components/gestures";
 import Variants from "./components/variants";
+import MultiVariants from "./components/multi-variants";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       {/* <Basics /> */}
       {/* <Gestures /> */}
       <Variants />
+      <MultiVariants />
     </div>
   );
 }
