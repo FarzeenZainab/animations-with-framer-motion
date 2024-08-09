@@ -3,7 +3,8 @@ import "./App.css";
 // import Gestures from "./components/gestures";
 // import Variants from "./components/variants";
 // import MultiVariants from "./components/multi-variants";
-import MultiVariantsLoop from "./components/multi-variants-loop";
+// import MultiVariantsLoop from "./components/multi-variants-loop";
+import UseAnimate from "./components/use-animate";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <Gestures /> */}
       {/* <Variants /> */}
       {/* <MultiVariants /> */}
-      <MultiVariantsLoop />
+      {/* <MultiVariantsLoop /> */}
+      <UseAnimate />
     </div>
   );
 }
