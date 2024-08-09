@@ -5,6 +5,7 @@ import "./App.css";
 // import MultiVariants from "./components/multi-variants";
 // import MultiVariantsLoop from "./components/multi-variants-loop";
 import UseAnimate from "./components/use-animate";
+import ScrollTriggeredAnimations from "./components/scroll-triggered-animations";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       {/* <MultiVariants /> */}
       {/* <MultiVariantsLoop /> */}
       <UseAnimate />
+      <ScrollTriggeredAnimations />
     </div>
   );
 }
