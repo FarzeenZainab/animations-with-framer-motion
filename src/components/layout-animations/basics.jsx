@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const basics = () => {
   /**
    * CSS layouts are difficult and expensive to animate
@@ -34,7 +36,27 @@ const basics = () => {
    * distortion, the first child elements of the element can be given layout property
    *
    */
-  return <div>basics</div>;
+
+  /**
+   * Another feature of framer motion is that it can animate height between
+   * 0 to auto and CSS can not do that
+   */
+
+  /**
+   * The problems of layout animations
+   *
+   * 1. Performance
+   * 2. Discrete rules
+   */
+
+  /**
+   * Explanation: https://www.youtube.com/watch?v=5-JIu0u42Jc
+   */
+  return (
+    <div>
+      <motion.div></motion.div>
+    </div>
+  );
 };
 
 export default basics;
