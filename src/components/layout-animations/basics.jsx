@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import "./styles.css";
 
-const basics = () => {
+const Basics = () => {
   /**
    * CSS layouts are difficult and expensive to animate
    *
@@ -52,11 +54,41 @@ const basics = () => {
   /**
    * Explanation: https://www.youtube.com/watch?v=5-JIu0u42Jc
    */
+
+  const [isOn, setIsOn] = useState(false);
+
+  const toggleSwitch = () => setIsOn(!isOn);
+
   return (
-    <div>
-      <motion.div></motion.div>
+    <div className="switch" data-isOn={isOn} onClick={toggleSwitch}>
+      {/* 
+
+        What properties are considered as layout changes:
+        margins, paddings, flexbox, grid, width, height, transforms,
+        borders, position, overflow, table layouts, dynamic content that
+        changes size or requires reflow, such as text or images. These
+        CSS properties can cause layout changes
+
+        any layout change that happens as the result of a re-render will be animated.
+
+        That could be any combination of:
+        - Reordering of a list.
+        - A style set on the component itself, for example a change in width or position.
+        - A change in the parent's layout, e.g. flexbox or grid.
+        - Or any other change in the component's layout.
+      
+      */}
+      <motion.div
+        layout
+        className="handle"
+        transition={{
+          type: "spring",
+          stiffness: 700,
+          damping: 30,
+        }}
+      ></motion.div>
     </div>
   );
 };
 
-export default basics;
+export default Basics;
